@@ -6,17 +6,14 @@ import plotly.express as px
 import streamlit as st
 import pandas as pd
 
+st.title("📸Ooshot Data Analysis")
+
 uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
 
 if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
 else:
     st.error("Please upload a CSV file.")
-
-
-st.title("📸Ooshot Data Analysis")
-
-
 #data = pd.read_csv(r'C:\Users\Riviere\OneDrive\Bureau\exercice_ooshot\Export exercice Ingénieur data et process.csv')
 
 
